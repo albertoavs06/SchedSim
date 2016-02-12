@@ -46,8 +46,8 @@ public class Processo {
      */
     @Override
     public String toString(){
-        return "["+ nome + " - " + Integer.toString(tempoRestante) + " - " + 
-                Integer.toString(tempoEspera)+"]\n";
+        return "["+ nome + " - " + tempoRestante + " - " + 
+                tempoEspera+"]\n";
     }
             
     public int getTempoRestante() {
