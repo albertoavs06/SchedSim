@@ -270,7 +270,8 @@ public class SchedSimUI extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButtonCarregarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButtonCarregarMouseClicked
-        Path path = Paths.get(ARQUIVO);
+        Path path = Paths.get(System.getProperty("user.dir")+"/"+ARQUIVO);
+        System.out.println(path);
         //carrega o conteudo de ARQUIVO em um ArrayList
         List <String> texto = new ArrayList<>();
         try {
